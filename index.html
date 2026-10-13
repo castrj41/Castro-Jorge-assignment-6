@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Getting Started With Clay</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    box-sizing: border-box;
+} body {
+    background: whitesmoke;
+    margin: 8px;
+} #page {
+    width: 928px;
+    height: auto;
+    background: #f7f5f2;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid darkgray;
+    box-shadow: 2px 3px 6px darkgray;
+} h1 {
+    font: 40pt/1.1em "Permanent Marker", cursive;
+    text-align: center;
+    font-weight: 200;
+    display: inline-block;
+    background-color: #3F3027;
+    color: #f7f5f2;
+    border: 20px solid #3F3027;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 10px auto;
+} h2 {
+    font: 18pt/1.2em "Google Sans", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: #171411;
+    width: 824px;
+    margin: 12px auto 20px;
+}#Banner-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 72%;
+    display: block;
+} .photo-grid {
+    width: 824px;
+    aspect-ratio: 1 / 1;
+    margin: 20px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+} .photo-left {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    min-height: 0;
+    overflow: hidden;
+} .photo-right {
+    min-height: 0;
+    overflow: hidden;
+} .photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} .photo-right:nth-child(3) img {
+    object-position: center 30%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="page">
+    <img id="Banner-img"
+         src="pexels-lam-thanh-1100392445-28867401.jpg"
+         alt="Pottery banner">
+    <h1>Methods of creating pottery</h1>
+	<h2>Handbuilding and Throwing</h2>
+<div class="photo-grid">
+        <div class="photo-left">
+            <img src="pexels-cup-of-couple-7302597.jpg"
+                 alt="Hand building pottery">
+        </div>
+ <div class="photo-right">
+            <img src="pexels-koolshooters-9736884.jpg"
+				 	alt="hand">
+        </div>
+	 <div class="photo-right">
+            <img src="pexels-cup-of-couple-7302655.jpg"
+                 alt="Working with clay">
+        </div>
+ <div class="photo-right">
+            <img src="pexels-igovar-igovar-3000547-38737341.jpg"
+                 alt="Pottery making process">
+        </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
